@@ -6,6 +6,7 @@ import UpdateUser from "./components/UpdateUser";
 import CreateOrg from "./components/CreateOrg";
 import AllOrg from "./components/AllOrg";
 import "antd/dist/antd.css";
+import UpdateOrg from "./components/UpdateOrg";
 
 
 function App() {
@@ -26,6 +27,8 @@ function App() {
         <Route path="/create-user" element={<CreateUser />} />
         <Route path="/create-org" element={<CreateOrg />} />
         <Route path="/update-user/:id" element={<UpdateUser />} />
+        <Route path="/update-Org/:id" element={<UpdateOrg />} />
+
       </Routes>
     </>
   );

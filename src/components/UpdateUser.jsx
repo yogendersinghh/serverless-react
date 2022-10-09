@@ -25,7 +25,6 @@ const UpdateUser = () => {
   useEffect(() => {
     (async () => {
       const { data } = await axios.get(`/dev/api/getone/${params.id}`);
-      console.log("🚀 ~ file: UpdateUser.jsx ~ line 18 ~ data", data[0]);
       setExistingUser(data[0]);
     })();
   }, []);
